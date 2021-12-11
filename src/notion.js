@@ -95,7 +95,7 @@ export async function deleteOldUnreadFeedItemsFromNotion() {
   let response;
   try {
     response = await notion.databases.query({
-      database_id: NOTION_READER_DATABASE_ID,
+      database_id: NOTION_READER_DATABASE,
       filter: {
         and: [
           {
